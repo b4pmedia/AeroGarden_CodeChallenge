@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <form name="aerogrow_part3" id="aerogrow_part3" onsubmit="DoSubmit();">
+    <input type="text" name="changeVal" value="" />
+    <input type="submit" name="submit" />
+  </form>
+  <script>
+    function DoSubmit() {
+      var field = document.getElementById("aerogrow_part3");
+      field.id = document.aerogrow_part3.changeVal.value;
+      alert("Your form ID has been changed to your input of: " + document.aerogrow_part3.id);
+      return true;
+    }
+  </script>
+
+</body>
+
+</html>
